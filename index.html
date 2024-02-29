@@ -25,20 +25,356 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <script
+      src="https://kit.fontawesome.com/dc4a396c3d.js"
+      crossorigin="anonymous"
+    ></script> -->
 
-    <!-- swiper js library css link -->
+    <!-- swiper css link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- owl carousel css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Netflix1.0</title>
   </head>
   <body>
     <!-- header section starts -->
-    <header></header>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <i class="fa-solid fa-film fa-shake"></i>net<span>flix</span
+            ><span>1.0</span>
+          </h1>
+        </div>
+        <div class="navigations">
+          <div class="navbar">
+            <a href="">home</a>
+            <a href="">genre</a>
+            <a href="">movies</a>
+            <a href="">series</a>
+            <a href="">about</a>
+          </div>
+          <div class="sign-in">
+            <a href="" class="btn">sign in</a>
+          </div>
+        </div>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
     <!-- header section ends -->
 
-    <!-- swiper js library js link -->
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="home-content swiper-slide">
+            <div class="image-bg">
+              <img src="images/banners-bg/wanda-banner.jpg" alt="" />
+            </div>
+            <div class="contents">
+              <div class="transition">
+                <div class="name top-down">
+                  <h1>wanda vision</h1>
+                </div>
+                <div class="info top-down">
+                  <h6>
+                    <span> <i class="fas fa-star"></i>9.5 </span>
+                    <span><i class="fas fa-clock"></i>120mins</span>
+                    <span>HD</span>
+                    <span>16+</span>
+                  </h6>
+                </div>
+                <div class="desc top-down">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint quos explicabo pariatur voluptas, beatae voluptatem sit
+                    dignissimos temporibus quo quidem, eaque magni facere
+                    voluptatum quam quasi animi, est natus fuga!
+                  </p>
+                </div>
+                <div class="home-btn top-down">
+                  <a href="" class="btns"
+                    ><i class="fas fa-play"></i> watch now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-content swiper-slide">
+            <div class="image-bg">
+              <img src="images/banners-bg/black-banner.png" alt="" />
+            </div>
+            <div class="contents">
+              <div class="transition">
+                <div class="name2 top-down">
+                  <h1>black panther</h1>
+                </div>
+                <div class="info2 top-down">
+                  <h6>
+                    <span> <i class="fas fa-star"></i>9.5 </span>
+                    <span><i class="fas fa-clock"></i>120mins</span>
+                    <span>HD</span>
+                    <span>16+</span>
+                  </h6>
+                </div>
+                <div class="desc2 top-down">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint quos explicabo pariatur voluptas, beatae voluptatem sit
+                    dignissimos temporibus quo quidem, eaque magni facere
+                    voluptatum quam quasi animi, est natus fuga!
+                  </p>
+                </div>
+                <div class="home-btn top-down">
+                  <a href="" class="btns"
+                    ><i class="fas fa-play"></i> watch now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-content swiper-slide">
+            <div class="image-bg">
+              <img src="images/banners-bg/supergirl-banner.jpg" alt="" />
+            </div>
+            <div class="contents">
+              <div class="transition">
+                <div class="name top-down">
+                  <h1>supergirl</h1>
+                </div>
+                <div class="info top-down">
+                  <h6>
+                    <span> <i class="fas fa-star"></i>9.5 </span>
+                    <span><i class="fas fa-clock"></i>120mins</span>
+                    <span>HD</span>
+                    <span>16+</span>
+                  </h6>
+                </div>
+                <div class="desc top-down">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint quos explicabo pariatur voluptas, beatae voluptatem sit
+                    dignissimos temporibus quo quidem, eaque magni facere
+                    voluptatum quam quasi animi, est natus fuga!
+                  </p>
+                </div>
+                <div class="home-btn top-down">
+                  <a href="" class="btns"
+                    ><i class="fas fa-play"></i> watch now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- movies section starts -->
+    <section class="movies">
+      <div class="swiper mySwiper2">
+        <div class="movies-box swiper-wrapper">
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/bat-man.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>the dark knight</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/blood-shot.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>Bloodshot</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/call.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>call</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/captain-marvel.png" alt="" />
+            </div>
+            <div class="description">
+              <h1>captain marvel</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/end-game.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>advengers: end-game</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/hunter-killer.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>hunter killer</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/insidious.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>insidious</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/love-roise.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>love, rosie</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/resident-evil.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>resident evil</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/theatre-dead.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>theatre dead</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <div class="image">
+              <img src="images/movies/transformer.jpg" alt="" />
+            </div>
+            <div class="description">
+              <h1>transformers</h1>
+              <h6>
+                <i class="fas fa-star"></i>9.5
+                <span><i class="fas fa-clock"></i>120mins</span>
+                <span>HD</span>
+                <span>16+</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- movies section  ends-->
+
+    <!-- owl carousel js link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- jQuert cdn link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper js link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js link -->

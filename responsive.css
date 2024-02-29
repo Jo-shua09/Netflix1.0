@@ -1,0 +1,104 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .home .home-content .contents {
+    padding: 30rem 3%;
+  }
+
+  .home .home-content .contents .transition p {
+    width: 88%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header .navigations .navbar {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  header .header .navigations .navbar.show {
+    transform: scaleX(1);
+  }
+  header .header .navigations .navbar a {
+    display: block;
+    padding: 1.5rem 0;
+    color: white;
+  }
+  header .header .navigations .navbar a:hover {
+    background-color: red;
+    color: whitesmoke;
+    transform: scale(1.1);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .sign-in .btn {
+    right: -160%;
+  }
+  .home .home-content .contents {
+    padding: 25rem 3%;
+  }
+  .home .home-content .contents .transition h1 {
+    font-size: 6rem;
+  }
+  .home .home-content .contents .transition p {
+    width: 85%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 615px) {
+  .sign-in .btn {
+    right: -100%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  header .header .navigations .navbar {
+    width: 75%;
+  }
+  .sign-in .btn {
+    right: -60%;
+  }
+  .home .home-content .contents {
+    padding: 30rem 3%;
+  }
+  .home .home-content .contents .transition p {
+    width: 95%;
+  }
+  header .header .logo h1 {
+    font-size: 2.5rem;
+  }
+  .movies .movies-box .box .image img {
+    height: 55rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .btn,
+  .btns {
+    font-size: 1.5rem;
+  }
+  .sign-in .btn {
+    right: -30%;
+  }
+  .home .home-content .contents .transition p {
+    width: 100%;
+  }
+}
