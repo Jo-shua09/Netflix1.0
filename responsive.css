@@ -54,8 +54,8 @@
   .home .home-content .contents .transition p {
     width: 85%;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
+  .home .swiper-button-next,
+  .home .swiper-button-prev {
     visibility: hidden;
   }
 }
@@ -85,6 +85,7 @@
   header .header .logo h1 {
     font-size: 2.5rem;
   }
+  .latest-movies .latest-box .box .image img,
   .movies .movies-box .box .image img {
     height: 65rem;
   }

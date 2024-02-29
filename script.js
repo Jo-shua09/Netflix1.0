@@ -63,3 +63,39 @@ var swiper = new Swiper(".mySwiper2", {
   },
 });
 //================== swiper settings for movies page =================
+
+//================== swiper settings for latest pages =================
+var swiper = new Swiper(".mySwiper3", {
+  slidesPerView: 4,
+  spaceBetween: 15,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    650: {
+      slidesPerView: 2,
+    },
+    750: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1250: {
+      slidesPerView: 4,
+    },
+  },
+});
+//================== swiper settings for movies page =================
