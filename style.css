@@ -348,7 +348,6 @@ section.movies {
 /* latest movies sectio starts */
 section.latest-movies {
   padding-top: 7rem;
-  padding-bottom: 1rem;
 }
 .latest-movies .swiper {
   position: relative;
@@ -559,7 +558,7 @@ section.footer {
   padding: 2rem;
   margin-right: 1rem;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: var(--fw3);
   color: var(--c2);
   background-color: var(--c1);
@@ -592,3 +591,30 @@ section.footer {
   font-weight: var(--fw3);
 }
 /* footer section ends */
+
+/* loader section */
+/* .loader-container {
+  overflow-y: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: #818ea0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.loader-container img {
+  width: 15rem;
+}
+
+.loader-container.fade-out {
+  opacity: 0;
+  transform: scaleX(0);
+} */
+
+/* loader section */

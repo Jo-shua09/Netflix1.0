@@ -1,3 +1,13 @@
+//================= loader setting ===============
+function loader() {
+  document.querySelector(".loader-container").classList.add("fade-out");
+}
+function fadeOut() {
+  setInterval(loader, 4000);
+}
+window.onload = fadeOut;
+//================= loader setting ===============
+
 // =========== navbar settings =============
 const menuBtn = document.querySelector(".fa-bars");
 const navBar = document.querySelector(".navbar");
@@ -99,3 +109,27 @@ var swiper = new Swiper(".mySwiper3", {
   },
 });
 //================== swiper settings for movies page =================
+
+//=================== change of image background settings ==================
+function replaceContent(clickedImage) {
+  var leftContent = document.querySelector(".leftContent");
+  var rightContent = document.querySelector(".rightContent");
+
+  var newImageSrc = clickedImage.src;
+  var newImageAlt = clickedImage.alt;
+
+  if (leftContent.contains(clickedImage)) {
+    var otherImage = rightContent.querySelector(".image-s");
+    otherImage.src = newImageSrc;
+    otherImage.alt = newImageAlt;
+    var otherText = rightContent.querySelector(".text");
+    otherText.textContent = otherText.innerHTML;
+  } else {
+    var otherImage = leftContent.querySelector(".image-s");
+    otherImage.src = newImageSrc;
+    otherImage.alt = newImageAlt;
+    var otherText = leftContent.querySelector(".text");
+    otherText.textContent = otherText.innerHTML;
+  }
+}
+//=================== change of image background settings ==================
