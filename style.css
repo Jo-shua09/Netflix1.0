@@ -195,7 +195,7 @@ section.home {
 .home .home-content .image-bg {
   position: absolute;
   width: 100%;
-  margin-top: 8rem;
+  height: 100vh;
 }
 .home .home-content .image-bg img {
   width: 100%;
@@ -208,7 +208,7 @@ section.home {
   left: 0;
   padding: 12rem 3%;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8) rgba(0, 0, 0));
 }
@@ -400,3 +400,195 @@ section.latest-movies {
   background-color: var(--tc);
 }
 /* latest movies sectio ends */
+
+/* pricing section starts */
+.pricing {
+  text-align: center;
+}
+.pricing h2 {
+  text-transform: uppercase;
+  font-weight: var(--fw3);
+  font-size: 3rem;
+  padding-bottom: 4rem;
+}
+.pricing h2 span {
+  text-transform: uppercase;
+  font-weight: var(--fw3);
+  font-size: 3rem;
+  color: var(--c1);
+}
+.pricing .pricing-box {
+  text-align: center;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pricing .pricing-box .box {
+  background-color: var(--tc);
+  flex: 1 1 30rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+  position: relative;
+  cursor: pointer;
+}
+.pricing .pricing-box .box:hover {
+  transform: translateY(-2rem);
+}
+.pricing .pricing-box .box:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.7rem;
+  background-color: var(--c2);
+}
+.pricing .pricing-box .box:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.7rem;
+  background-color: var(--c1);
+}
+.pricing .pricing-box .box:nth-child(3):before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.7rem;
+  background-color: var(--c2);
+}
+.pricing .pricing-box .box:hover:nth-child(1)::before {
+  top: 0;
+}
+.pricing .pricing-box .box:hover:nth-child(3)::before {
+  top: 0;
+}
+.pricing .pricing-box .box .type {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing .pricing-box .box .type span {
+  font-size: 3rem;
+  font-weight: var(--fw1);
+}
+.pricing .pricing-box .box .type h6 {
+  font-weight: var(--fw3);
+  font-size: 3rem;
+}
+.pricing .pricing-box .box .type h6 span {
+  font-weight: var(--fw3);
+  font-size: 1.5rem;
+}
+.pricing .pricing-box .box .type-prices {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.pricing .pricing-box .box .type-prices h3 {
+  font-size: 2.5rem;
+  font-weight: var(--fw1);
+}
+.pricing .pricing-box .box .type-prices h4 {
+  font-size: 2.5rem;
+  font-weight: var(--fw1);
+  text-decoration: line-through;
+}
+.pricing .pricing-box .box .type-prices h5 {
+  font-size: 2.5rem;
+  font-weight: var(--fw1);
+  text-decoration: line-through;
+}
+.pricing .pricing-box .box:nth-child(2) .type-prices h4 {
+  text-decoration: none;
+}
+.pricing .pricing-box .box:nth-child(3) .type-prices h4,
+.pricing .pricing-box .box:nth-child(3) .type-prices h5 {
+  font-size: 2.5rem;
+  font-weight: var(--fw1);
+  text-decoration: none;
+}
+
+/* pricing section ends */
+
+/* footer section starts */
+section.footer {
+  padding: 0;
+  background-color: var(--tc);
+}
+.footer .footer-box {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 5rem 3%;
+  padding-bottom: 3rem;
+}
+.footer .footer-box .box {
+  flex: 1 1 20rem;
+}
+.footer .footer-box .box .logo h1 {
+  font-size: 2.5rem;
+  font-weight: var(--fw3);
+  padding-bottom: 2rem;
+}
+.footer .footer-box .box .logo h1 span,
+.footer .footer-box .box .logo h1 i {
+  color: var(--c1);
+}
+.footer .footer-box .box .logo h1 span:nth-child(3) {
+  font-size: 1.5rem;
+  color: var(--c2);
+  font-weight: var(--fw3);
+}
+.footer .footer-box .box p {
+  font-size: 1.7rem;
+  width: 100%;
+  line-height: 3.3rem;
+}
+.footer .footer-box .box .icons {
+  margin-top: 3rem;
+}
+.footer .footer-box .box .icons i {
+  padding: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: var(--fw3);
+  color: var(--c2);
+  background-color: var(--c1);
+}
+.footer .footer-box .box h3 {
+  font-size: 2.5rem;
+  font-weight: var(--fw3);
+  padding-bottom: 2rem;
+}
+.footer .footer-box .box a {
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  color: var(--c2);
+  font-weight: var(--fw1);
+}
+.footer .footer-box .box a:hover {
+  color: var(--c1);
+}
+.credit {
+  text-align: center;
+  padding: 1rem 0;
+}
+.credit p {
+  font-size: 1.7rem;
+  font-weight: var(--fw1);
+}
+.credit p span {
+  color: var(--c1);
+  font-weight: var(--fw3);
+}
+/* footer section ends */
