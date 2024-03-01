@@ -3,9 +3,8 @@ function loader() {
   document.querySelector(".loader-container").classList.add("fade-out");
 }
 function fadeOut() {
-  setInterval(loader, 4000);
+  setInterval(loader, 2000);
 }
-window.onload = fadeOut;
 //================= loader setting ===============
 
 // =========== navbar settings =============
@@ -28,6 +27,7 @@ window.onload = function () {
   const trans = document.querySelectorAll(".transition");
   trans.forEach(function (element) {
     element.classList.add("show");
+    fadeOut();
   });
 };
 //================= home transition settings ===============
@@ -111,25 +111,5 @@ var swiper = new Swiper(".mySwiper3", {
 //================== swiper settings for movies page =================
 
 //=================== change of image background settings ==================
-function replaceContent(clickedImage) {
-  var leftContent = document.querySelector(".leftContent");
-  var rightContent = document.querySelector(".rightContent");
 
-  var newImageSrc = clickedImage.src;
-  var newImageAlt = clickedImage.alt;
-
-  if (leftContent.contains(clickedImage)) {
-    var otherImage = rightContent.querySelector(".image-s");
-    otherImage.src = newImageSrc;
-    otherImage.alt = newImageAlt;
-    var otherText = rightContent.querySelector(".text");
-    otherText.textContent = otherText.innerHTML;
-  } else {
-    var otherImage = leftContent.querySelector(".image-s");
-    otherImage.src = newImageSrc;
-    otherImage.alt = newImageAlt;
-    var otherText = leftContent.querySelector(".text");
-    otherText.textContent = otherText.innerHTML;
-  }
-}
 //=================== change of image background settings ==================
